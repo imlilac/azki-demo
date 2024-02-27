@@ -1,0 +1,325 @@
+/* initial setting */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: 0;
+}
+
+/* persion number font setting */
+.sample_farsi_digits {
+   font-feature-settings: "ss01";
+}
+
+.sample_tabular_numbers {
+   font-feature-settings: "tnum";
+}
+
+/* custom class */
+:root {
+   --primary-main: #00b4ff;
+   --secondary-main: #f5be41;
+   --primary-light: #5da0fb;
+   --secondary-light: #f5cd70;
+   --primary-dark: #1c79f6;
+   --scondary-dark: #f8b214;
+   --neutral-25: #f9f9f9;
+   --nuetral-50: #eaeaea;
+   --nuetral-100: #bdbdbf;
+   --nuetral-200: #9d9d9f;
+   --nuetral-300: #707174;
+   --nuetral-400: #555559;
+   --nuetral-500: #2a2b2f;
+   --white-color: #ffffff;
+   --black-color: #000000;
+
+   --primary-font: "Vazirmatn", sans-serif;
+
+   --transition-color: color 0.3s;
+   --transition-background: background-color 0.3s;
+   --transiton-border: border 0.3s;
+   --transition-transform: transform 0.3s;
+
+   --shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.16);
+   --fade: fade-bottom 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* body */
+body {
+   font-family: var(--primary-font);
+   font-size: 16px;
+   font-weight: 400;
+   direction: rtl;
+   line-height: 1.8;
+   color: var(--black-color);
+   background-color: var(--white-color);
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   vertical-align: middle;
+}
+
+ul {
+   list-style: none;
+}
+
+p {
+   margin: 0 0 15px;
+}
+
+input,
+textarea,
+select {
+   font: inherit;
+   width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+   color: inherit;
+}
+
+button {
+   font: inherit;
+}
+
+/* Desktop Typography */
+.h1-desktop {
+   font-size: 2.5rem;
+   font-weight: 900;
+}
+.h2-desktop {
+   font-size: 1.75rem;
+   font-weight: 700;
+}
+.h3-desktop {
+   font-size: 1.25rem;
+   font-weight: 700;
+}
+.subtitle-desktop {
+   font-size: 1.125rem;
+   font-weight: 500;
+}
+.btn-desktop {
+   font-size: 1rem;
+   font-weight: 700;
+}
+.caption-desktop {
+   font-size: 1.22rem;
+   font-weight: 500;
+}
+.overline-desktop {
+   font-size: 0.75rem;
+   font-weight: 500;
+}
+/* Mobile Typography */
+.h1-mobile {
+   font-size: 2rem;
+   font-weight: 900;
+}
+.h2-mobile {
+   font-size: 1.35rem;
+   font-weight: 700;
+}
+.h3-mobile {
+   font-size: 1.125rem;
+   font-weight: 700;
+}
+.subtitle-mobile {
+   font-size: 1rem;
+   font-weight: 500;
+}
+.body-mobile {
+   font-size: 0.875rem;
+   font-weight: 400;
+}
+.btn-mobile {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+.caption-mobile {
+   font-size: 0.75rem;
+   font-weight: 500;
+}
+.overline-mobile {
+   font-size: 0.625rem;
+   font-weight: 500;
+}
+
+/* ----------------------------------------------------------- */
+/* --------MOBILE SIZE---------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* HEADER ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+.header {
+   padding: 20px 20px;
+   box-shadow: var(--shadow);
+}
+
+.header_container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.header_container .header_menu {
+   width: 36px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--list {
+   display: none;
+}
+
+.header_container .header_content .header_content--logo {
+   width: 100px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--logo {
+   width: 100px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--logo img {
+   position: relative;
+   right: 15px;
+   bottom: 2px;
+}
+
+.header_container .header_button button {
+   border: none;
+   color: var(--primary-main);
+   background-color: inherit;
+   text-align: center;
+}
+
+/* section 1 ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------- */
+/* --------TABLET SIZE---------------------------------------- */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 650px) and (max-width: 950px) {
+   /* HEADER ---------------------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .header {
+      padding: 20px 30px;
+   }
+   .header_menu {
+      display: none;
+   }
+
+   .header_container .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list {
+      display: block;
+      margin-right: 10px;
+      margin-top: 3px;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list a {
+      margin-right: 5px;
+      font-size: 1.1rem;
+   }
+
+   .header_container .header_content .header_content--list .header_content--item i {
+      color: rgba(112, 113, 116, 1);
+      font-size: 20px;
+      margin-right: 5px;
+      position: relative;
+      top: 3px;
+   }
+
+   .header_container .header_content .header_content--logo {
+      width: 80px;
+      height: 36px;
+   }
+
+   .header_container .header_content .header_content--logo img {
+      position: static;
+   }
+
+   .header_container .header_button button {
+      border: 1px solid var(--primary-main);
+      padding: 5px 10px;
+      border-radius: 32px;
+      color: var(--primary-main);
+      background-color: inherit;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+   }
+}
+
+/* ----------------------------------------------------------- */
+/* --------DESKTOP SIZE---------------------------------------- */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 950px) {
+   /* HEADER RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .header {
+      padding: 20px 120px;
+   }
+
+   .header_menu {
+      display: none;
+   }
+
+   .header_container .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list {
+      display: block;
+      margin-right: 10px;
+      margin-top: 3px;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list a {
+      margin-right: 10px;
+   }
+
+   .header_container .header_content .header_content--list .header_content--item i {
+      color: rgba(112, 113, 116, 1);
+      font-size: 20px;
+      margin-right: 5px;
+      position: relative;
+      top: 3px;
+   }
+
+   .header_container .header_content .header_content--logo img {
+      position: static;
+   }
+
+   .header_container .header_button button {
+      border: 1px solid var(--primary-main);
+      padding: 5px 18px;
+      border-radius: 32px;
+      color: var(--primary-main);
+      background-color: inherit;
+      text-align: center;
+      font-size: 1.22rem;
+      font-weight: 700;
+   }
+}
