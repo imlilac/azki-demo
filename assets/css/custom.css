@@ -1,0 +1,575 @@
+/* initial setting */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: 0;
+}
+
+/* persion number font setting */
+.sample_farsi_digits {
+   font-feature-settings: "ss01";
+}
+
+.sample_tabular_numbers {
+   font-feature-settings: "tnum";
+}
+
+/* custom class */
+:root {
+   --primary-main: #00b4ff;
+   --secondary-main: #f5be41;
+   --primary-light: #5da0fb;
+   --secondary-light: #f5cd70;
+   --primary-dark: #1c79f6;
+   --scondary-dark: #f8b214;
+   --neutral-25: #f9f9f9;
+   --nuetral-50: #eaeaea;
+   --nuetral-100: #bdbdbf;
+   --nuetral-200: #9d9d9f;
+   --nuetral-300: #707174;
+   --nuetral-400: #555559;
+   --nuetral-500: #2a2b2f;
+   --white-color: #ffffff;
+   --black-color: #000000;
+
+   --primary-font: "Vazirmatn", sans-serif;
+
+   --transition-color: color 0.3s;
+   --transition-background: background-color 0.3s;
+   --transiton-border: border 0.3s;
+   --transition-transform: transform 0.3s;
+
+   --shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.16);
+   --fade: fade-bottom 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+/* body */
+body {
+   font-family: var(--primary-font);
+   font-size: 16px;
+   font-weight: 400;
+   direction: rtl;
+   line-height: 1.8;
+   color: var(--black-color);
+   background-color: var(--white-color);
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   vertical-align: middle;
+}
+
+ul {
+   list-style: none;
+}
+
+input,
+textarea,
+select {
+   font: inherit;
+   width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+   color: inherit;
+}
+
+button {
+   font: inherit;
+}
+
+/* Desktop Typography */
+.h1-desktop {
+   font-size: 2.5rem;
+   font-weight: 900;
+}
+.h2-desktop {
+   font-size: 1.75rem;
+   font-weight: 700;
+}
+.h3-desktop {
+   font-size: 1.25rem;
+   font-weight: 700;
+}
+.subtitle-desktop {
+   font-size: 1.125rem;
+   font-weight: 500;
+}
+.btn-desktop {
+   font-size: 1rem;
+   font-weight: 700;
+}
+.caption-desktop {
+   font-size: 1.22rem;
+   font-weight: 500;
+}
+.overline-desktop {
+   font-size: 0.75rem;
+   font-weight: 500;
+}
+/* Mobile Typography */
+.h1-mobile {
+   font-size: 2rem;
+   font-weight: 900;
+}
+.h2-mobile {
+   font-size: 1.35rem;
+   font-weight: 700;
+}
+.h3-mobile {
+   font-size: 1.125rem;
+   font-weight: 700;
+}
+.subtitle-mobile {
+   font-size: 1rem;
+   font-weight: 500;
+}
+.body-mobile {
+   font-size: 0.875rem;
+   font-weight: 400;
+}
+.btn-mobile {
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+.caption-mobile {
+   font-size: 0.75rem;
+   font-weight: 500;
+}
+.overline-mobile {
+   font-size: 0.625rem;
+   font-weight: 500;
+}
+
+/* HEADER ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+.header {
+   padding: 20px 20px;
+   box-shadow: var(--shadow);
+}
+
+.header_container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.header_container .header_menu {
+   width: 36px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--list {
+   display: none;
+}
+
+.header_container .header_content .header_content--logo {
+   width: 100px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--logo {
+   width: 100px;
+   height: 36px;
+}
+
+.header_container .header_content .header_content--logo img {
+   position: relative;
+   right: 15px;
+   bottom: 2px;
+}
+
+.header_container .header_button button {
+   border: none;
+   color: var(--primary-main);
+   background-color: inherit;
+   text-align: center;
+}
+
+/* section 1 ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section_one {
+   background: linear-gradient(45deg, #e3f1fd, #fbfdff);
+}
+
+.section_one--container {
+   padding: 40px 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+/* title */
+.section_one--container .section_one--title {
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+.section_one--container .section_one--title h1 {
+   font-size: 3rem;
+   font-weight: 900;
+   line-height: 55px;
+   color: var(--nuetral-400);
+   padding: 0 40px;
+}
+
+.section_one--container .section_one--title h2 {
+   font-size: 1.8rem;
+   font-weight: 500;
+   padding: 30px 0 5px 0;
+}
+
+.section_one--container .section_one--title h3 {
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+/* cars --------------------------------------*/
+
+.section_one--cars {
+   max-width: 700px;
+}
+.section_one--cars .car_box {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   gap: 10px;
+}
+
+.car_box .car_item--one .car_container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.car_box .car_item--one {
+   position: relative;
+}
+
+.car_box .car_item--one .car_container .car_option {
+   position: absolute;
+   top: -15%;
+   left: 20%;
+   transform: translateX(-50%);
+   padding: 5px 15px;
+   display: inline-block;
+   color: #3c8825;
+   background-color: #ebf3e9;
+   border-radius: 24px;
+   font-size: 0.75rem;
+   font-weight: 600;
+   text-align: center;
+}
+
+/* car item */
+.car_box .car_item {
+   width: calc(33.33% - 10px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   border: 1px solid #9d9d9f;
+   background-color: white;
+   border-radius: 24px;
+   padding: 10px 0;
+}
+
+/* car title */
+.car_box .car_item h3 {
+   font-size: 1.2rem;
+}
+/* car img */
+.car_box .car_item .car_img {
+   width: 55px;
+}
+
+/* line--------------------------------------------------- */
+.line_container {
+   width: 100%;
+}
+.line {
+   width: 100%;
+   height: 1px;
+   background-color: var(--primary-main);
+   margin: 60px 0;
+}
+
+/* option ----------------------------------------------------------- */
+.section_one--option {
+   max-width: 700px;
+}
+.section_one--option .option_box {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   gap: 10px;
+}
+
+/* option item */
+.option_box .option_item {
+   width: calc(50% - 10px);
+   display: flex;
+   align-items: center;
+   border: 1px solid #9d9d9f;
+   background-color: white;
+   border-radius: 15px;
+   padding: 10px 0;
+}
+
+/* option title */
+.option_box .option_item .option_title h3 {
+   font-size: 1rem;
+   color: var(--nuetral-300);
+   margin-right: 40px;
+}
+/* option img */
+.option_box .option_item .option_img {
+   width: 40px;
+   margin-right: 20px;
+}
+
+/* section 1 ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+.section_two--container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 20px;
+   margin-bottom: 20px;
+}
+
+.section_two--container .right_circle {
+   border-radius: 100%;
+   width: 20px;
+   height: 20px;
+   box-shadow: var(--shadow);
+   padding: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section_two--container .right_circle .right_circle--content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 95%;
+   height: 95%;
+   padding: 20px;
+   background-color: #bdbdbf;
+   border-radius: 100%;
+   flex-direction: column;
+   border: 1px solid #bdbdbf;
+}
+
+.section_two--container .right_circle .right_circle--content .circle_img {
+   width: 40px;
+}
+
+.section_two--container .right_circle .right_circle--content .circle_title {
+   position: relative;
+   bottom: 7px;
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+
+/* ----------------------------------------------------------- */
+/* --------TABLET SIZE---------------------------------------- */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 670px) and (max-width: 950px) {
+   /* HEADER ---------------------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .header {
+      padding: 20px 30px;
+   }
+   .header_menu {
+      display: none;
+   }
+
+   .header_container .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list {
+      display: block;
+      margin-right: 10px;
+      margin-top: 3px;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list a {
+      margin-right: 5px;
+      font-size: 1.1rem;
+   }
+
+   .header_container .header_content .header_content--list .header_content--item i {
+      color: rgba(112, 113, 116, 1);
+      font-size: 20px;
+      margin-right: 5px;
+      position: relative;
+      top: 3px;
+   }
+
+   .header_container .header_content .header_content--logo {
+      width: 80px;
+      height: 36px;
+   }
+
+   .header_container .header_content .header_content--logo img {
+      position: static;
+   }
+
+   .header_container .header_button button {
+      border: 1px solid var(--primary-main);
+      padding: 5px 10px;
+      border-radius: 32px;
+      color: var(--primary-main);
+      background-color: inherit;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+   }
+
+   .header_container .header_button button {
+      border: 1px solid var(--primary-main);
+      padding: 5px 15px;
+      border-radius: 32px;
+      color: var(--primary-main);
+      background-color: inherit;
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 700;
+   }
+
+   /* section one */
+   .section_one--cars {
+      margin: 0 80px;
+   }
+}
+
+/* ----------------------------------------------------------- */
+/* --------DESKTOP SIZE---------------------------------------- */
+/* ----------------------------------------------------------- */
+
+@media (min-width: 950px) {
+   /* HEADER RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .header {
+      padding: 20px 120px;
+   }
+
+   .header_menu {
+      display: none;
+   }
+
+   .header_container .header_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list {
+      display: block;
+      margin-right: 10px;
+      margin-top: 3px;
+      text-align: center;
+   }
+
+   .header_container .header_content .header_content--list a {
+      margin-right: 10px;
+   }
+
+   .header_container .header_content .header_content--list .header_content--item i {
+      color: rgba(112, 113, 116, 1);
+      font-size: 20px;
+      margin-right: 5px;
+      position: relative;
+      top: 3px;
+   }
+
+   .header_container .header_content .header_content--logo img {
+      position: static;
+   }
+
+   .header_container .header_button button {
+      border: 1px solid var(--primary-main);
+      padding: 5px 18px;
+      border-radius: 32px;
+      color: var(--primary-main);
+      background-color: inherit;
+      text-align: center;
+      font-size: 1.22rem;
+      font-weight: 700;
+   }
+
+   /* section 1 */
+   .section_one--container {
+      padding-top: 40px;
+   }
+   .section_one--container .section_one--title h2 {
+      padding: 30px 0 5px 0;
+   }
+   /* title */
+   .section_one--container .section_one--title {
+      margin-bottom: 45px;
+   }
+   .section_one--container .section_one--title h2 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      padding: 20px 0 7px 0;
+   }
+
+   .section_one--container .section_one--title h3 {
+      font-size: 1.35rem;
+      font-weight: 500;
+   }
+   /* car item */
+   .section_one--container .section_one--cars .car_item {
+      width: calc(20% - 10px);
+   }
+
+   .car_box .car_item h3 {
+      font-size: 1.5rem;
+   }
+
+   .car_box .car_item .car_img {
+      width: 65px;
+   }
+
+   .car_box .car_item--one .car_container .car_option {
+      font-size: 0.85rem;
+   }
+
+   /* line-------------------- */
+   .line_container {
+      width: 950px;
+   }
+   .line {
+      margin: 30px 0;
+   }
+
+   /* option item */
+   .section_one--container .section_one--option .option_item {
+      width: calc(33.33% - 10px);
+   }
+}
