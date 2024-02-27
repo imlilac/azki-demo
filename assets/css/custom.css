@@ -342,7 +342,7 @@ button {
    margin-right: 20px;
 }
 
-/* section 1 ---------------------------------------------------------------------- */
+/* section 2 ---------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
 .section_two--container {
@@ -386,6 +386,96 @@ button {
    bottom: 7px;
    font-size: 1.1rem;
    font-weight: 600;
+}
+
+/* section 3 ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section_three {
+   background-color: var(--neutral-25);
+}
+
+.section_three--container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.section_three--info {
+   padding: 0 20px;
+}
+
+.section_three--info .info_title h2 {
+   text-align: center;
+   padding: 40px 0 10px 0;
+   color: var(--neutral-500);
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.section_three--info .info_desc p {
+   color: var(--neutral-300);
+   text-align: justify;
+   font-weight: 400;
+   font-size: 1.5rem;
+}
+
+.section_three--info .info_box {
+   padding: 20px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 14px;
+}
+
+.section_three--info .info_box .info_card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 90px;
+   border-radius: 42px;
+   background-color: var(--white-color);
+}
+
+.info_box .info_card h2 {
+   font-size: 2.1rem;
+   font-weight: 900;
+   padding-left: 20px;
+   color: var(--scondary-dark);
+}
+
+.info_box .info_card h3 {
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+
+.section_three--info .info_btn {
+   text-align: center;
+   margin: 10px 0 40px 0;
+}
+
+.section_three--info .info_btn button {
+   text-align: center;
+   border: none;
+   padding: 10px 40px;
+   background-color: var(--primary-dark);
+   color: var(--white-color);
+   border-radius: 5px;
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.section_three--info .info_btn i {
+   position: relative;
+   top: 2px;
+   padding-right: 20px;
+}
+
+.section_three--container .section_three--img {
+   width: 390px;
+   position: relative;
+   top: 22px;
 }
 
 /* ----------------------------------------------------------- */
@@ -460,9 +550,17 @@ button {
       font-weight: 700;
    }
 
-   /* section one */
+   /* SECTION 2 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
    .section_one--cars {
       margin: 0 80px;
+   }
+
+   /* SECTION 3 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .section_three--info .info_desc p {
+      text-align: center;
+      max-width: 500px;
    }
 }
 
@@ -522,7 +620,8 @@ button {
       font-weight: 700;
    }
 
-   /* section 1 */
+   /* SECTION 1 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
    .section_one--container {
       padding-top: 40px;
    }
@@ -571,5 +670,115 @@ button {
    /* option item */
    .section_one--container .section_one--option .option_item {
       width: calc(33.33% - 10px);
+   }
+
+   /* SECTION 2 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .section_two--container {
+      padding: 0 30px;
+      margin-bottom: 40px;
+   }
+
+   /* SECTION 3 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .section_three--container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+      margin: 0 50px;
+   }
+   .section_three--info {
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   .section_three--info .info_box {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 14px;
+   }
+
+   .section_three--info {
+      padding: 0 20px;
+   }
+
+   .section_three--info .info_title h2 {
+      padding: 40px 0 10px 0;
+      text-align: start;
+      color: var(--neutral-500);
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   .section_three--info .info_desc p {
+      color: var(--neutral-300);
+      text-align: justify;
+      max-width: 600px;
+      font-weight: 400;
+      font-size: 1.4rem;
+   }
+
+   .section_three--info .info_box {
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+   }
+
+   .section_three--info .info_box .info_card {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 5px 30px;
+      border-radius: 32px;
+      background-color: var(--white-color);
+   }
+
+   .info_box .info_card h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      padding-left: 20px;
+      color: var(--scondary-dark);
+   }
+
+   .info_box .info_card h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      width: 80px;
+   }
+
+   .section_three--info .info_btn {
+      text-align: center;
+      margin: 10px 0 40px 0;
+   }
+
+   .section_three--info .info_btn button {
+      text-align: center;
+      border: none;
+      padding: 10px 20px;
+      background-color: var(--primary-dark);
+      color: var(--white-color);
+      border-radius: 5px;
+      font-size: 1.3rem;
+      font-weight: 700;
+   }
+
+   .section_three--info .info_btn i {
+      position: relative;
+      top: 2px;
+      padding-right: 20px;
+   }
+
+   .section_three--container .section_three--img {
+      width: 510px;
+      position: relative;
+      top: 77px;
    }
 }
