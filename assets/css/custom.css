@@ -197,7 +197,7 @@ button {
 /* section 1 ---------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 .section_one {
-   background: linear-gradient(45deg, #e3f1fd, #fbfdff);
+   background: linear-gradient(45deg, #e2f0fd, #ffffff);
 }
 
 .section_one--container {
@@ -728,6 +728,153 @@ button {
    border-radius: 10px;
    font-weight: 700;
    color: var(--white-color);
+   cursor: pointer;
+}
+
+/* section 6 ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+.section_six {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 70px;
+}
+
+.section_six--container {
+   display: flex;
+   align-content: center;
+   justify-content: center;
+}
+
+.section_six--card {
+   border-radius: 20px;
+   margin: 0 40px;
+   max-width: 400px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   box-shadow: var(--shadow);
+   width: calc(100% - 20px);
+}
+
+.section_six--header {
+   position: relative;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section_six--img {
+   width: 150px;
+   height: 150px;
+   position: absolute;
+}
+
+.section_six--title {
+   margin-top: 90px;
+}
+
+.section_six--title h2 {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.section_six--desc p {
+   margin: 10px 50px;
+   width: 220px;
+   line-height: 30px;
+   font-weight: 400;
+   text-align: justify;
+   color: var(--nuetral-400);
+}
+
+.section_six--btn {
+   margin: 30px 0;
+}
+
+.section_six--btn button {
+   background-color: rgba(62, 141, 247, 1);
+   border: none;
+   padding: 10px 30px;
+   border-radius: 10px;
+   font-weight: 700;
+   color: var(--white-color);
+   cursor: pointer;
+}
+
+.section_six--scroll {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   margin: 40px;
+   width: 320px;
+}
+
+.section_six--scroll .scroll_right,
+.scroll_left {
+   background-color: var(--white-color);
+   border-radius: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 42px;
+   height: 42px;
+   box-shadow: var(--shadow);
+}
+
+.scroll_right a {
+   position: relative;
+   top: 2px;
+   left: 1px;
+}
+
+.scroll_left a {
+   position: relative;
+   top: 2px;
+   right: 1px;
+}
+
+.scroll_right i,
+.scroll_left i {
+   width: 100%;
+   height: 100%;
+   color: var(--black-color);
+   font-size: 2.3rem;
+   text-align: center;
+}
+
+.scroll_circle {
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+}
+
+.scroll_circle--blue {
+   background-color: var(--primary-main);
+   width: 18px;
+   height: 18px;
+   border-radius: 100%;
+}
+.scroll_circle--gray {
+   background-color: var(--nuetral-50);
+   width: 18px;
+   height: 18px;
+   border-radius: 100%;
+}
+
+.card--hide {
+   display: none;
+}
+
+.card--hide-two {
+   display: none;
 }
 
 /* ----------------------------------------------------------- */
@@ -888,6 +1035,52 @@ button {
       padding: 12px 28px;
       border-radius: 10px;
       font-size: 1.3rem;
+   }
+
+   /* section 6 responsive ---------------------------------------------------------------------- */
+   /* -------------------------------------------------------------------------------- */
+   .section_six {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .card--hide-two {
+      display: block;
+   }
+
+   .section_six--scroll {
+      width: 600px;
+   }
+
+   .section_six--img {
+      width: 120px;
+   }
+
+   .section_six--title {
+      margin-top: 80px;
+   }
+
+   .section_six--title h2 {
+      font-size: 1.85rem;
+   }
+
+   .section_six--desc p {
+      margin: 10px 35px;
+      width: 210px;
+      font-size: 1.35rem;
+   }
+
+   .section_six--btn {
+      margin: 30px 0;
+   }
+
+   .section_six--btn button {
+      font-size: 1.2rem;
+      padding: 10px 25px;
+   }
+
+   .section_six--card {
+      margin: 0 20px;
    }
 }
 
@@ -1184,5 +1377,51 @@ button {
 
    .form_btn {
       margin-bottom: 10px;
+   }
+
+   /* section 6 responsive ---------------------------------------------------------------------- */
+   /* -------------------------------------------------------------------------------- */
+   .section_six {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .card--hide {
+      display: block;
+   }
+
+   .section_six--scroll {
+      width: 900px;
+   }
+
+   .section_six--img {
+      width: 95px;
+   }
+
+   .section_six--title {
+      margin-top: 60px;
+   }
+
+   .section_six--title h2 {
+      font-size: 1.7rem;
+   }
+
+   .section_six--desc p {
+      margin: 10px 15px;
+      width: 180px;
+      font-size: 1.1rem;
+   }
+
+   .section_six--btn {
+      margin: 28px 0;
+   }
+
+   .section_six--btn button {
+      font-size: 1.1rem;
+      padding: 7px 25px;
+   }
+
+   .section_six--card {
+      margin: 0 10px;
    }
 }
