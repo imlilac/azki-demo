@@ -335,6 +335,7 @@ button {
    font-size: 1rem;
    color: var(--nuetral-300);
    margin-right: 40px;
+   align-items: center;
 }
 /* option img */
 .option_box .option_item .option_img {
@@ -478,6 +479,60 @@ button {
    top: 22px;
 }
 
+/* SECTION 5----------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+.section_five {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.section_five--container {
+   padding: 80px 50px;
+   max-width: 400px;
+}
+
+.section_five--up,
+.section_five--down {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+}
+
+.section_five--item {
+   width: calc(50% - 20px);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 15px;
+}
+
+.section_five--card {
+   border: 1px solid gray;
+   border-radius: 100%;
+   padding: 40px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 160px;
+   height: 80px;
+}
+
+.section_five--title h3 {
+   font-size: 1.1rem;
+   margin-top: 12px;
+   font-weight: 500;
+   color: var(--neutral-500);
+}
+
+.section_five--img {
+   width: 50px;
+   height: 50px;
+}
+
 /* ----------------------------------------------------------- */
 /* --------TABLET SIZE---------------------------------------- */
 /* ----------------------------------------------------------- */
@@ -550,6 +605,27 @@ button {
       font-weight: 700;
    }
 
+   /* option item */
+   .option_box .option_item {
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: center;
+      border: 1px solid #9d9d9f;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px 0;
+   }
+
+   /* option title */
+   .option_box .option_item .option_title h3 {
+      font-size: 1rem;
+      color: var(--nuetral-300);
+      align-items: center;
+      margin-left: auto;
+      position: relative;
+      left: -50px;
+   }
+
    /* SECTION 2 RESPONSIVE----------------------------------------------------------- */
    /* ----------------------------------------------------------------------------- */
    .section_one--cars {
@@ -561,6 +637,45 @@ button {
    .section_three--info .info_desc p {
       text-align: center;
       max-width: 500px;
+   }
+
+   /* SECTION 5 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .section_five--container {
+      padding: 80px 0;
+      max-width: 800px;
+   }
+   .section_five--container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+   }
+   .section_five--card {
+      width: 130px;
+      height: 50px;
+   }
+   .section_five--item {
+      width: calc(100% - 20px);
+   }
+   .section_five--img {
+      width: 60px;
+      height: 50px;
+   }
+   .section_five--title h3 {
+      font-size: 0.85rem;
+      margin-top: 10px;
+      text-align: center;
+      width: 100px;
+      font-weight: 500;
+      color: var(--neutral-500);
+   }
+   .section_five--up,
+   .section_five--down {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
    }
 }
 
@@ -623,14 +738,14 @@ button {
    /* SECTION 1 RESPONSIVE----------------------------------------------------------- */
    /* ----------------------------------------------------------------------------- */
    .section_one--container {
-      padding-top: 40px;
+      padding-top: 80px;
    }
    .section_one--container .section_one--title h2 {
-      padding: 30px 0 5px 0;
+      padding: 40px 0 10px 0;
    }
    /* title */
    .section_one--container .section_one--title {
-      margin-bottom: 45px;
+      margin-bottom: 50px;
    }
    .section_one--container .section_one--title h2 {
       font-size: 1.75rem;
@@ -661,10 +776,11 @@ button {
 
    /* line-------------------- */
    .line_container {
-      width: 950px;
+      width: 800px;
+      overflow: hidden;
    }
    .line {
-      margin: 30px 0;
+      margin: 40px 0;
    }
 
    /* option item */
@@ -780,5 +896,43 @@ button {
       width: 510px;
       position: relative;
       top: 77px;
+   }
+   /* SECTION 3 RESPONSIVE----------------------------------------------------------- */
+   /* ----------------------------------------------------------------------------- */
+   .section_five--container {
+      padding: 80px 10px;
+      max-width: 800px;
+   }
+   .section_five--container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+   }
+   .section_five--card {
+      width: 160px;
+      height: 80px;
+   }
+   .section_five--item {
+      width: calc(100% - 20px);
+   }
+   .section_five--img {
+      width: 60px;
+      height: 50px;
+   }
+   .section_five--title h3 {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      text-align: center;
+      width: 150px;
+      font-weight: 500;
+      color: var(--neutral-500);
+   }
+   .section_five--up,
+   .section_five--down {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
    }
 }
