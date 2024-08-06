@@ -16,9 +16,17 @@ Users should be able to:
 
 -  View the optimal layout for the site depending on their device's screen size (Responsive Design)
 
-### Screenshot
+### Screenshot (Laptop size)
 
 ![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki.png)
+
+### Screenshot (Tablet size)
+
+![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki%20(1).png)
+
+### Screenshot (Mobile size)
+
+![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki%20(2).png)
 
 ## My process
 
