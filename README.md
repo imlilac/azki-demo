@@ -14,7 +14,7 @@ Designing a simple page from Azki website use figma patern, using HTML5 & CSS. h
 
 Users should be able to:
 
--  View the optimal layout for the site depending on their device's screen size
+-  View the optimal layout for the site depending on their device's screen size (Responsive Design)
 
 ### Screenshot
 
