@@ -1117,6 +1117,19 @@
    .section_six--card {
       margin: 0 20px;
    }
+
+   /* footer ---------------------------- */
+   .footer_list--left {
+      margin-right: 150px;
+   }
+
+   .footer_list--right {
+      margin-left: 150px;
+   }
+
+   .footer_info {
+      margin: 0 134px;
+   }
 }
 
 /* ----------------------------------------------------------- */
