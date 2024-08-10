@@ -20,10 +20,6 @@ Users should be able to:
 
 ![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki.png)
 
-### Screenshot (Tablet size)
-
-![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki%20(1).png)
-
 ### Screenshot (Mobile size)
 
 ![](https://github.com/imlilac/azki-demo/blob/main/assets/img/azki%20(2).png)
